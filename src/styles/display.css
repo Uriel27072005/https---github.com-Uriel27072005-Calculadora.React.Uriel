@@ -1,0 +1,27 @@
+/* Display.css */
+
+.display {
+    height: 60px; /* Altura del display */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    text-align: right; /* Alinear el texto a la derecha */
+    padding: 15px; /* Espaciado interno */
+    background-color: #eaeaea; /* Color de fondo */
+    border-bottom: 2px solid #ccc; /* Línea inferior para separar */
+    overflow: hidden; /* Evitar que el texto se desborde */
+  }
+  
+  /* Media Queries para el display */
+  @media (max-width: 600px) {
+    .display {
+      font-size: 2em; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+      height: 50px; /* Ajustar altura en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .display {
+      font-size: 1.5em; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+      height: 40px; /* Ajustar altura en pantallas muy pequeñas */
+    }
+  }
+  

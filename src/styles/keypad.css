@@ -1,0 +1,81 @@
+/* Keypad.css */
+
+/* General para pantallas grandes */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .keypad button {
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .keypad button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries para pantallas pequeñas */
+  @media (max-width: 500px) {
+    .keypad {
+      display: grid;
+      grid-template-areas:
+        "C  divide multiply"
+        "minus plus equal"
+        "seven eight nine"
+        "four five six"
+        "one two three"
+        "decimal zero zero";
+      gap: 10px;
+    }
+  
+    .keypad button:nth-child(1) { grid-area: C; }
+    .keypad button:nth-child(2) { grid-area: divide; }
+    .keypad button:nth-child(3) { grid-area: multiply; }
+    .keypad button:nth-child(4) { grid-area: minus; }
+    .keypad button:nth-child(5) { grid-area: seven; }
+    .keypad button:nth-child(6) { grid-area: eight; }
+    .keypad button:nth-child(7) { grid-area: nine; }
+    .keypad button:nth-child(8) { grid-area: plus; }
+    .keypad button:nth-child(9) { grid-area: four; }
+    .keypad button:nth-child(10) { grid-area: five; }
+    .keypad button:nth-child(11) { grid-area: six; }
+    .keypad button:nth-child(12) { grid-area: equal; }
+    .keypad button:nth-child(13) { grid-area: one; }
+    .keypad button:nth-child(14) { grid-area: two; }
+    .keypad button:nth-child(15) { grid-area: three; }
+    .keypad button:nth-child(16) { grid-area: decimal; }
+    .keypad button:nth-child(17) { grid-area: zero; }
+  
+    .keypad button {
+      height: 50px;
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .keypad {
+      grid-template-areas:
+        "C divide multiply"
+        "minus plus equal"
+        "seven eight nine"
+        "four five six"
+        "one two three"
+        "decimal zero zero";
+      gap: 8px;
+    }
+  
+    .keypad button {
+      height: 40px;
+      font-size: 1em;
+    }
+  }
+  
